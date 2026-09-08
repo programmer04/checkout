@@ -18,6 +18,7 @@ async function run(): Promise<void> {
       )
 
       // Get sources
+      core.info('HELLO WORLD!!!')
       await gitSourceProvider.getSource(sourceSettings)
       core.setOutput('ref', sourceSettings.ref)
     } finally {

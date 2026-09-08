@@ -109,7 +109,7 @@ export async function getSource(settings: IGitSourceSettings): Promise<void> {
     if (
       !fsHelper.directoryExistsSync(path.join(settings.repositoryPath, '.git'))
     ) {
-      core.startGroup('Determining repository object format')
+      core.startGroup('Determining repository object format -> HELLO WORLD!!!')
       const objectFormatResult =
         await githubApiHelper.tryGetRepositoryObjectFormat(
           settings.authToken,
